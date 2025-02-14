@@ -1,8 +1,11 @@
-﻿# springcomics-server
- <p>공부한 것을 만화로 그리며 복습하려 만든 웹툰 연재 사이트 서버입니다.</p>
+﻿# springcomics-client
+ <p>공부한 것을 만화로 그리며 복습하려 만든 웹툰 연재 웹 페이지 입니다.</p>
 
 ## 🚀 기술 스택
 ### ⚡백엔드
+
+[백엔드 Repo](https://github.com/spcotoon/springcomics-server)
+
 <div>
 <img src="https://img.shields.io/badge/spring boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
 <img src="https://img.shields.io/badge/Spring JPA-59666C?style=for-the-badge&logo=hibernate&logoColor=white"> 
@@ -53,6 +56,7 @@
 |검색|작품 제목, 작가명 검색|
 |페이지네이션|Slice 인터페이스로 메인 웹툰 리스트는 스크롤식, PagedModel 인터페이스로 각 작품, 댓글은 버튼식 페이징|
 |이미지 업로드|presigned-url을 발급하여 s3 업로드|
+|redux-persist|로그인 유저 정보 전역관리|
 
  <br/>
 
