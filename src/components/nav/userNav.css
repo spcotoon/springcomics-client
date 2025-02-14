@@ -1,0 +1,186 @@
+/* 전체적인 네비게이션 스타일 */
+
+
+.user-nav {
+  position: relative;
+  background-color: #9be18d76;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: none;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.brand {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.brand-name {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 16px; /* 기본 글자 크기 */
+}
+
+.logout-btn:hover {
+  color: #ff3333;
+}
+
+.user-name {
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 14px; /* 기본 글자 크기 */
+  color: #666;
+}
+
+/* 검색 바 */
+.search-bar {
+  display: flex;
+  align-items: center;
+ 
+  padding: 5px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* 사이드 네비게이션 버튼 */
+.side-nav-button {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* 사이드 네비게이션 스타일 */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  transition: left 0.3s ease;
+  z-index: 2000; /* 사이드 네비게이션을 가장 위로 오게 설정 */
+}
+
+.side-nav.open {
+  left: 0;
+}
+
+.side-nav .nav-close-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.side-nav .nav-link {
+  padding: 15px;
+  text-align: left;
+}
+
+.side-nav .logout-btn {
+  padding: 15px;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.brand-text, .portfolio-text {
+  display: inline-block; /* 기본적으로 한 줄에 표시되지만 */
+}
+
+/* 작은 화면에서 두 줄로 표시 */
+@media (max-width: 768px) {
+  .brand-text, .portfolio-text {
+    display: block; /* 두 줄로 나눠서 표시 */
+  }
+}
+
+/* 작은 화면에서 사이드 네비게이션 버튼 보이기 */
+@media (max-width: 768px) {
+  .side-nav-button {
+    display: block;
+    z-index: 2001;  /* 사이드 네비게이션 버튼이 위에 오도록 설정 */
+  }
+
+  .comic-navigation{
+    z-index: 999;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .search-bar input {
+    width: 150px;
+    font-size: 12px;  /* 검색 입력 필드의 글자 크기 줄이기 */
+  }
+
+  .search-bar button {
+    font-size: 14px;
+  }
+
+  /* 글자 크기 줄이기 */
+  .nav-link {
+    font-size: 14px; /* 작은 화면에서 글자 크기 줄이기 */
+  }
+
+  .logout-btn {
+    font-size: 14px; /* 작은 화면에서 글자 크기 줄이기 */
+  }
+
+  .user-name {
+    font-size: 12px; /* 작은 화면에서 글자 크기 줄이기 */
+  }
+}

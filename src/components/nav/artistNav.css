@@ -1,0 +1,137 @@
+/* 전체적인 네비게이션 스타일 */
+.artist-nav {
+    position: relative;
+    background-color: #b6bdc3c2;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .brand {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .brand-name {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .logout-btn {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  
+  .logout-btn:hover {
+    color: #ff3333;
+  }
+  
+  .user-name {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* 사이드 네비게이션 스타일 */
+  .side-nav-button {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .side-nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .side-nav.open {
+    left: 0;
+  }
+  
+  .side-nav .nav-close-btn {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .side-nav .nav-link {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .side-nav .logout-btn {
+    padding: 15px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* 작은 화면에서 사이드 네비게이션 버튼 보이기 */
+  @media (max-width: 768px) {
+    .side-nav-button {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  }
+  
+  /* 오버레이 스타일 */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 배경 어두운 색 */
+    z-index: 2000; /* 사이드 네비게이션보다 위에 배치 */
+  }
+  
+  /* 사이드 네비게이션 열렸을 때 */
+  .side-nav.open {
+    left: 0;
+    z-index: 3000; /* 사이드 네비게이션을 오버레이 위로 */
+  }
+  

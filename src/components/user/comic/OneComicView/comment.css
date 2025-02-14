@@ -1,0 +1,102 @@
+.comment-box {
+  padding: 20px;
+}
+
+.comment-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px; 
+  resize: none; 
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-btn {
+  background-color: #f4f4f4; 
+  border: 1px solid #ddd; 
+  padding: 12px 28px;
+  font-size: 16px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  transition: all 0.3s ease;
+  text-align: center; 
+  margin-top: 10px; 
+}
+
+.comment-btn:disabled {
+  background-color: #e1e1e1;
+  cursor: not-allowed;
+}
+
+.comments-list {
+  margin-top: 20px;
+}
+
+.comment-card {
+  padding: 10px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 10px;
+  max-width: 100%; 
+  word-break: break-word; 
+  overflow-wrap: break-word;
+}
+
+.comment-header {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.comment-header span {
+  color: gray;
+  font-size: 0.9em;
+}
+
+.comment-card p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.comment-box button {
+  background-color: #a3f3d2c0;
+  color: rgb(3, 0, 1);
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.comment-box button:disabled {
+  background-color: #6c757d;
+}
+
+@media screen and (max-width: 768px) {
+  .comment-box {
+      padding: 15px;
+  }
+
+  textarea {
+      height: 100px;
+      font-size: 14px;
+  }
+
+  .comment-card {
+      font-size: 14px;
+      padding: 8px;
+      max-width: 100%;
+  }
+
+  .comment-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+}

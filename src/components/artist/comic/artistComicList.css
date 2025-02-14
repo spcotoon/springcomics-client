@@ -1,0 +1,235 @@
+.comic-list-container {
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+
+img {
+  margin-top: 0px;
+  max-width: 100%;
+  padding: 5px;
+  background: #fff;
+  border: none;
+}
+
+.upload-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.upload-button:hover {
+  background-color: #4caf50;
+}
+
+.loading,
+.error,
+.no-comics {
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+}
+
+.comic-grid {
+  display: grid;  
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px; 
+  margin-top: 60px;
+}
+
+.comic-card {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  padding: 15px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  height: 300px;  
+}
+
+.comic-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa;
+}
+
+.comic-thumbnail {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+}
+
+.comic-info {
+  flex: 1;
+}
+
+.comic-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.comic-genre {
+  font-size: 14px;
+  color: #666;
+}
+
+.comic-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.thumbnail-container {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px; 
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border: none;
+}
+
+.info-container {
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.genre {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.synopsis {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.artist {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+
+.comic-container {
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+}
+
+.upload-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.episode-rating {
+  font-size: 14px;
+  color: #ff9900;
+  margin-right: 5px;
+}
+
+.upload-btn:hover {
+  background-color: #45a049;
+}
+
+.comic-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comic-item {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.comic-link {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}
+
+.thumbnail-area {
+  width: 200px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.thumbnail-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-area {
+  padding: 10px;
+  flex: 1;
+}
+
+.comic-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.meta-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.comic-id {
+  margin-right: 10px;
+}
+
+.upload-date {
+  color: #999;
+}
+
+.comic-item:hover {
+  background-color: #f5f5f5;
+}
+
+
+@media (min-width: 769px) {
+  .comic-card {
+    height: auto;
+    max-width: 100%; 
+  }
+}
